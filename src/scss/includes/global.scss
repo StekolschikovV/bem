@@ -1,0 +1,58 @@
+@import "const";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    &__item {
+      margin-left: 20px;
+      cursor: pointer;
+      &_active, &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.btn {
+  padding: 10px 30px;
+  background: $main-color;
+  display: inline-block;
+  cursor: pointer;
+  &:hover {
+    background: darken($main-color, 30%);
+  }
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form {
+  &__textarea {
+    width: calc(100% - 40px);
+    padding: 20px;
+    margin: 0;
+  }
+  &__controls {
+    text-align: right;
+  }
+}

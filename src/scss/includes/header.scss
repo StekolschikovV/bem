@@ -1,0 +1,15 @@
+@import "const";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid $main-color;
+  align-items: center;
+
+  &__img-logo {
+    width: 60px;
+    height: 40px;
+    background: $accent-color;
+  }
+
+}

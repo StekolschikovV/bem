@@ -1,0 +1,18 @@
+section.help.block
+    .block__title.title Чем можем посочь прямо сейчас?
+    .help__inner
+        form.form
+            .help-form-checkbox.help-form-checkbox__button
+                input.help-form-checkbox__checkbox(type='checkbox')
+                .help-form-checkbox__knobs
+                    span Поставить задачу
+                .help-form-checkbox__layer
+            textarea(placeholder="Опишите подробно свое пожелание, баг или задачу", rows=7).form__textarea
+            .form__controls
+                .help-form__submit-btn.btn Отправить
+        .block__col.help-tag
+            .block__sub-title.sub-title Какой проект?
+            ul.help-tag__tag-list
+                each _ in Array(13)
+                    li.help-tag__tag-item Project name
+                li.help-tag__tag-item.help-tag__tag-item_active Project name
